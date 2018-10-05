@@ -1,6 +1,6 @@
 <template>
 <div>
-    <v-toolbar class="tlbr" dark>
+    <v-toolbar class="tlbr blue darken-4" dark>
           <img class="logo" src="http://dreamicus.com/data/fairy/fairy-03.jpg"><img>
           <v-toolbar-title dark> <a href="/"> Šumska Vila </a></v-toolbar-title>
           <!-- <img src="http://www.transparentpng.com/download/fairy-tattoos/BrZEpi-fairy-tattoos-transparent-background.png"></img> -->
@@ -14,7 +14,7 @@
         </v-toolbar-items>
     </v-toolbar>
 
-        <v-list v-if="open" class="hidden-md-and-up menuList">
+        <v-list v-if="open" class="hidden-md-and-up blue darken-3">
             <v-list-tile>
           <v-btn flat><a href="">Galerija</a></v-btn>
             </v-list-tile>
@@ -38,11 +38,5 @@ export default {
 <style scoped>
 .logo{
     max-height: 55px;
-}
-.tlbr{
-    background-color: rgb(30, 124, 153);
-}
-.menuList{
-    background-color: rgb(39, 169, 209);
 }
 </style>

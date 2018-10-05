@@ -1,5 +1,5 @@
 <template>
-  <v-app class="body" light >
+  <v-app class="blue lighten-1" light >
     <app-menu></app-menu>
     <app-welcome></app-welcome>
     <app-section></app-section>
@@ -38,7 +38,4 @@
   }
 </script>
 <style scoped>
-.body{
-  background-color: rgb(173, 216, 230);
-}
 </style>

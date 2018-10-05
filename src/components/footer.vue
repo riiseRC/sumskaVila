@@ -1,4 +1,5 @@
 <template>
+<v-container>
     <v-footer class="footer" dark height="auto">
              <v-flex sm9 md9 lg9>
                  <p>Copyright</p>
@@ -13,6 +14,7 @@
             </v-btn>
             </v-flex>           
     </v-footer>
+</v-container>
 </template>
 
 <script>

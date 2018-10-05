@@ -17,6 +17,7 @@
   import donot from './components/donot.vue'
   import footer from './components/footer.vue'
 
+
   export default {
     components:{
       'app-menu': menu,

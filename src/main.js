@@ -7,8 +7,8 @@ import 'vuetify/dist/vuetify.min.css'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
 Vue.use(VueResource)
-
 Vue.use(Vuetify)
+
 
 new Vue({
   el: '#app',

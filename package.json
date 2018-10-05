@@ -12,7 +12,6 @@
   "dependencies": {
     "express": "^4.16.3",
     "express-force-https": "^1.0.0",
-    "material-design-icons-iconfont": "^3.0.3",
     "serve-static": "^1.13.2",
     "vue": "^2.5.2",
     "vue-resource": "^1.5.1",
@@ -51,6 +50,7 @@
     "vue-cli-plugin-vuetify": "^0.2.1",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
+    "vue-svgicon": "^3.2.0",
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",

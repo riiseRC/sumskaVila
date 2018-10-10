@@ -1,31 +1,16 @@
 <template>
-  <v-app class="blue lighten-1" light >
+  <v-app light class="blue lighten-1">
     <app-menu></app-menu>
-    <app-welcome></app-welcome>
-    <app-section></app-section>
-    <introgallery></introgallery>
-    <donot></donot>
-    <dno></dno>
+    <router-view></router-view>
   </v-app>
 </template>
 
 <script>
-  import welcome from './components/welcome.vue'
   import menu from './components/menu.vue'
-  import section from './components/section.vue'
-  import introGallery from './components/introGallery.vue'
-  import donot from './components/donot.vue'
-  import footer from './components/footer.vue'
-
 
   export default {
     components:{
       'app-menu': menu,
-      'app-welcome': welcome,
-      'app-section': section,
-      'introgallery': introGallery,
-      'donot' : donot,
-      'dno': footer  
       },
 
     data () {
@@ -38,4 +23,5 @@
   }
 </script>
 <style scoped>
+
 </style>

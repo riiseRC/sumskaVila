@@ -1,7 +1,8 @@
 <template>
     <div class="jumbo">
-      <v-jumbotron src="https://i.postimg.cc/76kPQ2wP/sumskavila.jpg">
-      </v-jumbotron>
+      <v-responsive>
+      <v-img class="img" src="https://i.postimg.cc/76kPQ2wP/sumskavila.jpg"></v-img>
+      </v-responsive>
     </div>
 </template>
 
@@ -19,5 +20,8 @@ export default({
 .jumbo{
   border-bottom: 2px solid #fff;
   border-top: 2px solid #fff;
+}
+.img{
+    max-height: 500px;
 }
 </style>

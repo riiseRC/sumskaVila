@@ -5,16 +5,14 @@
                     :key="x"
                     :src="item"
                     @click="open"
-                    class="img"/>
+                    class="img sm3 md3 lg3"/>
         </v-container>
         <div class="resp" v-show="show">
-            <v-container>
             <v-img :src="currentImg">
                 <v-btn flat class="left" @click="counterP"><v-icon>keyboard_arrow_left</v-icon></v-btn>
                 <v-btn flat class="right" @click="counterM"><v-icon>keyboard_arrow_right</v-icon></v-btn>
                 <div flat @click="exit" class="exit"><v-icon dark>highlight_off</v-icon></div>
             </v-img>
-            </v-container>
         </div>
     </v-app>
 </template>
@@ -85,13 +83,20 @@ export default {
 .img{
     width: 200px;
     height: 200px;
-    float: left;
+    margin: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px -1px 23px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -1px 23px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px -1px 23px 0px rgba(0,0,0,0.75);
 }
 .resp{
     min-width: 70%;
-    border: 1px solid rgb(8, 7, 109);
-    margin: 0px auto;
+    margin: 20px auto;
     text-align: center;
+    -webkit-box-shadow: 0px -1px 23px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -1px 23px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px -1px 23px 0px rgba(0,0,0,0.75);
+    border: 2px solid rgb(65, 63, 63);
 }
 .left{
     float: left;

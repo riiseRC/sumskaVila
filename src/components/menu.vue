@@ -4,7 +4,7 @@
           <img class="logo" src="http://dreamicus.com/data/fairy/fairy-03.jpg"><img>
             <v-toolbar-title dark> 
             <router-link to="/">
-            <h2>Šumska Vila</h2></router-link>
+            <h4>Šumska Vila</h4></router-link>
             </v-toolbar-title>
           <!-- <img src="http://www.transparentpng.com/download/fairy-tattoos/BrZEpi-fairy-tattoos-transparent-background.png"></img> -->
           
@@ -48,7 +48,6 @@ export default {
     max-height: 55px;
 }
 .router-link-exact-active{
-  background-color:rgb(170, 3, 3);
-  border-radius: 10%;
+  background-color:rgb(51, 51, 255);
 }
 </style>

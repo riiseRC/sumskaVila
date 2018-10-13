@@ -1,11 +1,14 @@
 <template>
     <v-app class="blue lighten-1">
         <v-container fluid v-show="list">
-            <img v-for="(item, x) in items"
-                    :key="x"
-                    :src="item"
-                    @click="open"
-                    class="img sm3 md3 lg3"/>
+        <v-layout row wrap>
+            <v-flex v-for="(item, x) in items"
+                        :key="x"
+                    xs6 sm4 md3 lg2
+                        >
+                <img @click="open" class="img" :src="item"/>
+            </v-flex>
+        </v-layout>
         </v-container>
         <div class="resp" v-show="show">
             <v-img :src="currentImg">
@@ -49,23 +52,21 @@ export default {
                 this.currentImg = this.items[this.counter];
                 
                 if(this.counter == (this.items.length-1)){
-                    this.counter = 0;
+                    return  this.counter = 0;
                 }else{
-                    this.counter++;
+                    return  this.counter++;
                 }
             },
             counterM: function(){
                 this.currentImg = this.items[this.counter];
-                console.log(this.counter);
-                
+        
                 if(this.counter == 0){
-                    this.counter = (this.items.length-1);
+                    return  this.counter = (this.items.length-1);
                 }else{
-                    this.counter--;
+                    return   this.counter--;
                 }  
             },
             open: function(e){
-                console.log(e.target.src);
                 this.currentImg = e.target.src;
                 this.show = true;
                 this.list = false;
@@ -81,8 +82,8 @@ export default {
 
 <style scoped>
 .img{
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
     margin: 5px;
     border-radius: 5px;
     -webkit-box-shadow: 0px -1px 23px 0px rgba(0,0,0,0.75);

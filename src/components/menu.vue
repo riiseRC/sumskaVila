@@ -4,7 +4,7 @@
           <img class="logo" src="http://dreamicus.com/data/fairy/fairy-03.jpg"><img>
             <v-toolbar-title dark> 
             <router-link to="/">
-            <h4>Šumska Vila</h4></router-link>
+            <h5>Šumska Vila</h5></router-link>
             </v-toolbar-title>
           <!-- <img src="http://www.transparentpng.com/download/fairy-tattoos/BrZEpi-fairy-tattoos-transparent-background.png"></img> -->
           

@@ -1,8 +1,6 @@
 <template>
-    <div class="jumbo">
-      <v-responsive>
-      <v-img class="img" src="https://i.postimg.cc/76kPQ2wP/sumskavila.jpg"></v-img>
-      </v-responsive>
+    <div class="par">
+        <v-parallax src="https://i.postimg.cc/76kPQ2wP/sumskavila.jpg"></v-parallax>
     </div>
 </template>
 
@@ -17,11 +15,7 @@ export default({
 </script>
 
 <style scoped>
-.jumbo{
-  border-bottom: 2px solid #fff;
-  border-top: 2px solid #fff;
-}
-.img{
-    max-height: 500px;
+.par{
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 </style>
